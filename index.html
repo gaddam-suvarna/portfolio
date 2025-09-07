@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom CSS for Resume Section -->
+  <style>
+    /* Resume Section Styling */
+    .resume-mf {
+      padding: 60px 0;
+      background: #f9f9f9;
+    }
+
+    .resume-mf .title-box {
+      margin-bottom: 40px;
+    }
+
+    .resume-mf .title-a {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .resume-mf .subtitle-a {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .resume-mf .line-mf {
+      width: 60px;
+      height: 4px;
+      background: #3498db;
+      margin: 20px auto;
+    }
+
+    .resume-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .resume-box h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .resume-box p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .resume-box hr {
+      border: 0;
+      height: 1px;
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    .resume-box h3 {
+      font-size: 1.5rem;
+      color: #3498db;
+      margin-bottom: 15px;
+    }
+
+    .resume-box ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .resume-box ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .resume-box ul li strong {
+      color: #2c3e50;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .resume-mf .title-a {
+        font-size: 2rem;
+      }
+
+      .resume-box h2 {
+        font-size: 1.8rem;
+      }
+
+      .resume-box h3 {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* Consistent Design for All Sections */
+    .about-mf,
+    .services-mf,
+    .portfolio-mf,
+    .contact-mf {
+      padding: 60px 0;
+      background: #f9f9f9;
+    }
+
+    .about-mf .title-box,
+    .services-mf .title-box,
+    .portfolio-mf .title-box,
+    .contact-mf .title-box {
+      margin-bottom: 40px;
+    }
+
+    .about-mf .title-a,
+    .services-mf .title-a,
+    .portfolio-mf .title-a,
+    .contact-mf .title-a {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .about-mf .subtitle-a,
+    .services-mf .subtitle-a,
+    .portfolio-mf .subtitle-a,
+    .contact-mf .subtitle-a {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .about-mf .line-mf,
+    .services-mf .line-mf,
+    .portfolio-mf .line-mf,
+    .contact-mf .line-mf {
+      width: 60px;
+      height: 4px;
+      background: #3498db;
+      margin: 20px auto;
+    }
+
+    .box-shadow-full,
+    .service-box,
+    .work-box,
+    .contactForm {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Social Icons Styling */
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      font-size: 24px;
+      color: #2c3e50;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #3498db;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Suvarna Gaddam</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image"
+    style="background: linear-gradient(135deg, #1a1a1a); ">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="intro-title mb-4">I am SUVARNA GADDAM</h1>
+          <p class="intro-subtitle"><span class="text-slider-items"><!--CEO DevFolio,Web Developer,Web Designer,Frontend
+              Developer,Graphic Designer-->Full-Stack web Developer</span><strong class="text-slider"></strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <!--/ Resume Section Star /-->
+  <section id="resume" class="resume-mf sect-pt4 route" >
+    <div class="container" >
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Resume
+            </h3>
+            <p class="subtitle-a">
+              Here’s a quick look at my skills, education, and experience.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resume-box">
+            <h2>SUVARNA GADDAM</h2>
+            <p>📍 Kurnool, India | 📞 8106834752 | 📧 gaddamsuvarna504@example.com</p>
+            <hr>
+            <h3>Summary</h3>
+            <p>
+              A passionate Full Stack Web Developer with strong skills in HTML, CSS, JavaScript, and modern frameworks.<br> 
+              I specialize in creating responsive, user-friendly web applications with clean code and efficient design.
+            </p>
+            <h3>Education</h3>
+            <p>
+              <strong>Bachelor of Computer Science</strong><br>
+              Expected Graduation: April 2026<br>
+              Rise Krishna Sai Group of Institutions, Ongole, India<br>
+              Currently pursuing a degree with a focus on web development and software engineering.
+            </p>
+            <h3> Experience</h3>
+            <p>
+              <strong>Web Development Intern-Learnflu, bengaluru</strong><br>
+              sep 2025 - Present<br>
+              - Assisted in developing responsive web applications using HTML, CSS, JavaScript<br>
+              - Worked on backend integration with Node.js and Express.<br>
+              - Gained experience in collaborating with a development team and following Agile practices.
+            </p>
+            <h3>Skills</h3>
+            <ul>
+              <li><strong>Programming Languages:</strong>:C, Python</li>
+              <li><strong>Web Technologies</strong>: HTML5, CSS3, JavaScript, Node.js, Express.js</li>
+              <li><strong>Databases:</strong>:MySQL</li>
+
+  
+  </section>
+  <!--/ Resume Section End /-->
+
+  <!--/ About Section Star /-->
+  <section id="about" class="about-mf sect-pt4 route" style="background: linear-gradient(135deg, #f3f5fa); ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5" style= "border-radius: 50%;">
+                    <div class="about-img">
+                      <img src="D:/frontend project/img/testi1.jpg"
+                        class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Suvarna Gaddam</span></p>
+                      <p><span class="title-s">Degree: </span> <span>Bachelor of Computer Science</span></p>
+                      <p><span class="title-s">Profile: </span> <span>Full Stack Developer</span></p>
+                      <p><span class="title-s">Email: </span> <span>gaddamsuvarna504@gmail.com</span></p>
+                      <p><span class="title-s">Phone: </span> <span>8106834752</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Skill</p>
+                  <span>HTML</span> <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>CSS3</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                 <!-- <span>PHP</span> <span class="pull-right">50%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>-->
+                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About me
+                    </h5>
+                  </div>
+                  <p>
+                    I am a Computer Science graduate and aspiring Full Stack Developer with a strong foundation in web technologies. 
+                    Currently working as a Web Development Intern at Learnflu Tech, I have hands-on experience in building responsive websites and integrating backend services. 
+                    Skilled in HTML, CSS, JavaScript, Node.js, Express.js, and MySQL, I enjoy turning ideas into practical solutions.
+                     I am passionate about continuous learning and eager to contribute to impactful projects. 
+                     Beyond coding, I love exploring new technologies and sharing knowledge with peers
+                   
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ About Section End /-->
+
+  <!--/ Services Section Star /-->
+  <section id="service" class="services-mf route" >
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Services
+            </h3>
+            <p class="subtitle-a">
+              Here are some of the services I offer.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-desktop"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Design</h2>
+              <p class="s-description text-center">
+                I create modern and responsive web designs that are visually appealing and user-friendly.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-shopping-cart"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">E-Commerce Platforms</h2>
+              <p class="s-description text-center">
+                I build e-commerce platforms that are secure, scalable, and easy to manage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-info-circle"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Informational Websites</h2>
+              <p class="s-description text-center">
+                I develop informational websites that are easy to navigate and provide valuable content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Services Section End /-->
+
+  <!--/ Portfolio Section Star /-->
+  <section id="work" class="portfolio-mf sect-pt4 route" style="background: linear-gradient(135deg, #f3f5fa); ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Projects
+            </h3>
+            <p class="subtitle-a">
+              Check out some of my recent projects.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="https://gaddam-suvarna.github.io/live-weather-project/" target="_blank">
+              <div class="work-img">
+                <img src="D:/frontend project/img/live weather project.jpg" alt="Project 1"
+                  class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Live Weather Report</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development</span> / <span class="w-date">6 Sep. 2025</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="https://hmwebstudio.site/" target="_blank">
+              <div class="work-img">
+                <img src="C:/Users/suvar/Downloads/devfolio-master/devfolio-master/img/port 2.png" alt="Project 2"
+                  class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">HM Web Studio</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development</span> / <span class="w-date">12 Oct. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Portfolio Section End /-->
+
+  <!--/ Contact Section Star /-->
+  <section id="contact" class="contact-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Contact
+            </h3>
+            <p class="subtitle-a">
+              Feel free to reach out to me for any inquiries or collaborations.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contactForm">
+            <form action="" method="post" role="form" class="contactForm">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                      data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                      data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                      data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="more-info">
+            <p class="lead">
+              If you have any questions or would like to discuss a project, feel free to contact me. I’m always open to
+              new opportunities and collaborations.
+            </p>
+            <ul class="list-ico">
+              <li><span class="ion-ios-location"></span> Kurnool, India</li>
+              <li><span class="ion-ios-telephone"></span> 8106834752</li>
+              <li><span class="ion-email"></span> gaddamsuvarna504@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Contact Section End /-->
+
+  <!--/ Footer Star /-->
+  <!--/ Footer Star /-->
+  <footer style="background-color: #1a1a1a; color: #fff; padding: 20px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright" style="color: #fff;">&copy; CopyrightAll Rights Reserved</p>
+            <div class="credits">
+              Designed by <a  target="_blank" style="color: #e40dbc;">Suvarna Gaddam</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank" class="facebook" style="color: #fff;"><i
+                  class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/" target="_blank" class="twitter" style="color: #fff;"><i
+                  class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" class="instagram" style="color: #fff;"><i
+                  class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" class="linkedin" style="color: #fff;"><i
+                  class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
